@@ -16,7 +16,7 @@ typedef struct{
 }personaje_t;
 
 //Batman
-personaje_t batman = {"Batman", 100, 100, 100, 100,100,100,100,100,"DC"};
+personaje_t batman = {"Batman", 100, 100, 100, 100, 100, 100, 100, 100,"DC"};
 int main(){
     printf("Nombre:%s\n",batman.nombre);
     printf("Resistencia:%d\n",batman.resistencia);
