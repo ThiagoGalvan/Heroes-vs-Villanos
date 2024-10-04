@@ -3,16 +3,17 @@
 
 typedef struct{
     char nombre[MAX_CHAR];
-    int ataque;
-    int ataque_especial;
-    int defensa;
-    int defensa_especial;
+    int ataque1;
+    int ataque2;
+    int ataque3;
+    int defensa1;
+    int defensa2;
+    int defensa3;
     int vida;
     int vida_maxima;
     int velocidad;
     int iq;
 }personaje_t;
-
 //Batman
 personaje_t batman = {"Batman", 100, 100, 100, 100, 100, 100, 100, 100};
 //Joker
