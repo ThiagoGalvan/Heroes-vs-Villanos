@@ -3,42 +3,39 @@
 
 typedef struct{
     char nombre[MAX_CHAR];
-    int resistencia;
-    int resistencia_fuego;
-    int resistencia_elec;
+    int ataque;
+    int ataque_especial;
+    int defensa;
+    int defensa_especial;
     int vida;
-    int fuerza;
+    int vida_maxima;
     int velocidad;
-    int edad;
     int iq;
-    char franquicia[MAX_CHAR];
 }personaje_t;
 
 //Batman
-personaje_t batman = {"Batman", 100, 100, 100, 100, 100, 100, 100, 100,"DC"};
+personaje_t batman = {"Batman", 100, 100, 100, 100, 100, 100, 100, 100};
 //Joker
-personaje_t joker = {"Joker", 100, 100, 100, 100, 100, 100, 100, 100, "DC"};
+personaje_t joker = {"Joker", 100, 100, 100, 100, 100, 100, 100, 100};
+
 int main(){
-    printf("Nombre:%s\n",batman.nombre);
-    printf("Resistencia:%d\n",batman.resistencia);
-    printf("Resistencia al fuego:%d\n",batman.resistencia_fuego);
-    printf("Resistencia electrica:%d\n",batman.resistencia_elec);
+    printf("Nombre:%s\n",batman.ataque);
+    printf("Ataque:%d\n",batman.ataque_especial);
+    printf("Defensa:%d\n",batman.defensa);
+    printf("Defensa especial:%d\n",batman.defensa_especial);
     printf("Vida:%d\n",batman.vida);
-    printf("Fuerza:%d\n",batman.fuerza);
+    printf("Vida maxima:%d\n",batman.vida_maxima);
     printf("Velocidad:%d\n",batman.velocidad);
-    printf("Edad:%d\n",batman.edad);
-    printf("IQ:%d\n",batman.iq);
-    printf("Franquicia:%s\n",batman.franquicia);
+    printf("Inteligencia:%d\n",batman.iq);
+
 
     // Mostrar habilidades de Joker
-    printf("Nombre: %s\n", joker.nombre);
-    printf("Resistencia: %d\n", joker.resistencia);
-    printf("Resistencia al fuego: %d\n", joker.resistencia_fuego);
-    printf("Resistencia eléctrica: %d\n", joker.resistencia_elec);
-    printf("Vida: %d\n", joker.vida);
-    printf("Fuerza: %d\n", joker.fuerza);
-    printf("Velocidad: %d\n", joker.velocidad);
-    printf("Edad: %d\n", joker.edad);
-    printf("IQ: %d\n", joker.iq);
-    printf("Franquicia: %s\n", joker.franquicia);
+    printf("Nombre:%s\n",joker.ataque);
+    printf("Ataque:%d\n",joker.ataque_especial);
+    printf("Defensa:%d\n",joker.defensa);
+    printf("Defensa especial:%d\n",joker.defensa_especial);
+    printf("Vida:%d\n",joker.vida);
+    printf("Vida maxima:%d\n",joker.vida_maxima);
+    printf("Velocidad:%d\n",joker.velocidad);
+    printf("Inteligente:%d\n",joker.iq);
 }
