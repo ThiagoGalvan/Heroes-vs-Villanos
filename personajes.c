@@ -7,21 +7,30 @@ void stats_Joker(void)
 
 typedef struct{
     char nombre[MAX_CHAR];
-    int ataque1;
-    int ataque2;
-    int ataque3;
-    int defensa1;
-    int defensa2;
-    int defensa3;
+    int potencia;
+    int usos;
+}ataque_t;
+typedef struct{
+    char nombre[MAX_CHAR];
+    int curacion;
+    int proteccion;
+    int usos;
+}defensa_t;
+
+
+typedef struct{
+    char nombre[MAX_CHAR];
+    ataque_t ataques[3];
+    defensa_t defensas[3];
     int vida;
     int vida_maxima;
     int velocidad;
-    int iq;
+    int evasion;
 }personaje_t;
 //Batman
-personaje_t batman = {"Batman", 100, 100, 100, 100, 100, 100, 100, 100};
+const personaje_t batman = {"Batman",};
 //Joker
-personaje_t joker = {"Joker", 100, 100, 100, 100, 100, 100, 100, 100};
+const personaje_t joker = {"Joker", 100, 100, 100, 100, 100, 100, 100, 100};
 
 int main(){
     Bienvenida()
