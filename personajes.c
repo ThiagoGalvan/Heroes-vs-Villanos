@@ -1,6 +1,10 @@
 #include <stdio.h>
 #define MAX_CHAR 50
 
+void Bienvenida(void);
+void stats_Batman(void);
+void stats_Joker(void)
+
 typedef struct{
     char nombre[MAX_CHAR];
     int ataque1;
@@ -20,6 +24,16 @@ personaje_t batman = {"Batman", 100, 100, 100, 100, 100, 100, 100, 100};
 personaje_t joker = {"Joker", 100, 100, 100, 100, 100, 100, 100, 100};
 
 int main(){
+    Bienvenida()
+    
+}
+
+void Bienvenida(){
+    printf("Bienvenido a nuestro juego de Heroes contra Villanos");
+}
+
+void stats_Batman(){
+    printf("Elegiste a Batman, estas son sus estadisticas:\n")
     printf("Nombre:%s\n",batman.ataque);
     printf("Ataque:%d\n",batman.ataque_especial);
     printf("Defensa:%d\n",batman.defensa);
@@ -28,9 +42,10 @@ int main(){
     printf("Vida maxima:%d\n",batman.vida_maxima);
     printf("Velocidad:%d\n",batman.velocidad);
     printf("Inteligencia:%d\n",batman.iq);
+}
 
-
-    // Mostrar habilidades de Joker
+void stats_Joker(){
+    printf("Elegiste al Joker, estas son sus estadisticas:\n")
     printf("Nombre:%s\n",joker.ataque);
     printf("Ataque:%d\n",joker.ataque_especial);
     printf("Defensa:%d\n",joker.defensa);
